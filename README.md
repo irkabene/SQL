@@ -5,6 +5,7 @@
 Retrieves date from a database
 
 - *Syntax:*
+  ```SQL
 SELECT column1, column2, ..., columnN
 FROM table_name;
 
