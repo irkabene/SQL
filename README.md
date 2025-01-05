@@ -15,7 +15,7 @@ Retrieves date from a database
 *FROM:* This is another SQL keyword. It specifies which table you want to fetch the data from. <br/>
 *table_name:* This is the name of the table from which you want to retrieve data. <br/>
 
-# Similar but not the same
+## Similar but not the same
 
 - SELECT * : Fetches *all columns* from the specified table, helpful when you need complete rows.
 - SELECT ALL: Fetches *all rows*, including duplicates, from specified columns, useful when duplicates are necessary for the analysis.
@@ -35,7 +35,7 @@ Retrieves date from a database
     //Returns unique (not 2 same) names from actor and customer columnes
 
 ```
-##LIMIT Clause
+## LIMIT Clause
 - *Use:*
 Used to set an upper limit on the number of tuples or records the query will return.
 
