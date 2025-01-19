@@ -95,8 +95,25 @@ The resulting table will display the full_name of each actor, a column that does
 ```
 
 ## WHERE Clause
-
-
+- The WHERE clause in SQL is used to filter records based on specific conditions.
+```SQL
+  SELECT column1, column2, ...
+  FROM table_name
+  WHERE condition;
+```
+-*Operators* 
+1. *= (Equal):* This operator checks if the value in a column equals a specified value.
+  ```SQL
+    SELECT * 
+    FROM film 
+    WHERE title = 'AFRICAN EGG';
+  ```
+- * <> or != (Not Equal): This operator checks if the value in a column is not equal to a specified value.*
+```SQL
+SELECT * 
+FROM film 
+WHERE rating <> 'G';
+```
 
 
 
