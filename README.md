@@ -162,3 +162,15 @@ WHERE rating IN ('G', 'PG', 'PG-13');
 |NOT|	Reverse the result of any other Boolean operator.
 |OR| 	Return true if either expression is true
 |SOME|	Return true if some of the expressions are true
+
+## % Wildcards
+- The % wildcard in SQL is a versatile tool that allows you to add flexibility to your search queries. It represents zero, one, or multiple characters in a string, helping you search for patterns, partial matches, or even misspelled data. Typically, the % wildcard is used with the LIKE operator in the WHERE clause of an SQL statement.
+
+-Examples
+|Code|Comments|
+|:--:|:------:|
+|```SQL   | LALAL|
+ SELECT title
+ FROM film
+ WHERE title LIKE 'A%';
+```
