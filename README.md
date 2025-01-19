@@ -169,8 +169,8 @@ WHERE rating IN ('G', 'PG', 'PG-13');
 -Examples
 |Code|Comments|
 |:--:|:------:|
-|```SQL   | LALAL|
- SELECT title
- FROM film
- WHERE title LIKE 'A%';
-```
+| WHERE movie_title LIKE 'A%';|The % wildcard allows us to search for all movie titles that start with 'A'|
+| WHERE customer_last_name LIKE '%SON';|the % wildcard is searching for all customers whose last name ends with 'SON'|
+| WHERE movie_title LIKE '%LOVE%'; | the % wildcard is used before and after 'LOVE', indicating we're looking for any movie title that contains the word 'LOVE', regardless of what comes before or after it|
+
+
