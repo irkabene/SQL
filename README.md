@@ -101,19 +101,64 @@ The resulting table will display the full_name of each actor, a column that does
   FROM table_name
   WHERE condition;
 ```
--*Operators* 
+## Operators
 1. *= (Equal):* This operator checks if the value in a column equals a specified value.
   ```SQL
     SELECT * 
     FROM film 
     WHERE title = 'AFRICAN EGG';
   ```
-- * <> or != (Not Equal): This operator checks if the value in a column is not equal to a specified value.*
+2. *<> or != (Not Equal):* This operator checks if the value in a column is not equal to a specified value.
 ```SQL
 SELECT * 
 FROM film 
 WHERE rating <> 'G';
 ```
+3. *> (Greater Than) and < (Less Than):* These operators check if the value in a column is greater than or less than a specified value.
+```SQL
+SELECT * 
+FROM film 
+WHERE rental_duration > 3;
+```
+4. *>= (Greater Than or Equal To) and <= (Less Than or Equal To):* These operators check if the value in a column is greater than or equal to, or less than or equal to a specified value.
+```SQL
+SELECT * 
+FROM film 
+WHERE rental_rate <= 2.99;
+```
+5. *BETWEEN:* This operator fetches the values within a range.
+```SQL
+  SELECT * 
+  FROM film 
+  WHERE rental_duration BETWEEN 5 AND 6;
+```
+6. *LIKE:* This operator is used to search for a specified pattern in a column.
+```SQL
+SELECT * 
+FROM film 
+WHERE title LIKE 'AM%';
+```
+- WHERE title LIKE 'AM%': This is the condition for filtering. It only includes films where the title starts with 'AM'. The '%' is a wildcard that matches any number of characters.
 
+7.  *IN:* This operator allows you to specify multiple values in a WHERE clause.
+```SQL
+SELECT * 
+FROM film 
+WHERE rating IN ('G', 'PG', 'PG-13');
+```
+-WHERE rating IN ('G', 'PG', 'PG-13'): This is the condition for filtering. It only includes films where the rating is either 'G', 'PG', or 'PG-13'.
 
+## Logical Operators
 
+|Operator|Meaning|
+|:------:|:-----:|
+|ALL|	Return true if all comparisons are true|
+AND	Return true if both expressions are true
+ANY	Return true if any one of the comparisons is true.
+BETWEEN	Return true if the operand is within a range
+EXISTS	Return true if a subquery contains any rows
+IN	Return true if the operand is equal to one of the value in a list
+LIKE	Return true if the operand matches a pattern
+NOT	Reverse the result of any other Boolean operator.
+OR 	Return true if either expression is true
+SOME	Return true if some of the expressions are true
