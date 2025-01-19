@@ -163,14 +163,22 @@ WHERE rating IN ('G', 'PG', 'PG-13');
 |OR| 	Return true if either expression is true
 |SOME|	Return true if some of the expressions are true
 
-## % Wildcards
+## "%" Wildcard
 - The % wildcard in SQL is a versatile tool that allows you to add flexibility to your search queries. It represents zero, one, or multiple characters in a string, helping you search for patterns, partial matches, or even misspelled data. Typically, the % wildcard is used with the LIKE operator in the WHERE clause of an SQL statement.
 
 -Examples
 |Code|Comments|
 |:--:|:------:|
-| WHERE movie_title LIKE 'A%';|The % wildcard allows us to search for all movie titles that start with 'A'|
-| WHERE customer_last_name LIKE '%SON';|the % wildcard is searching for all customers whose last name ends with 'SON'|
+| WHERE movie_title LIKE 'A%'; |The % wildcard allows us to search for all movie titles that start with 'A'|
+| WHERE customer_last_name LIKE '%SON';| the % wildcard is searching for all customers whose last name ends with 'SON'|
 | WHERE movie_title LIKE '%LOVE%'; | the % wildcard is used before and after 'LOVE', indicating we're looking for any movie title that contains the word 'LOVE', regardless of what comes before or after it|
 
+## "_" Wildcard
+- In SQL, the _ wildcard is your magic wand when you need to search for data that matches a specific pattern, particularly when you're not sure about an exact character. It stands for any single character, and just like %, it is used with the LIKE operator.
+
+|Code|Comments|
+|:--:|:------:|
+|WHERE movie_title LIKE '________'; |The _ wildcard searches for all movie titles that contain exactly eight characters|
+|WHERE movie_title LIKE 'T______K'; |Allows us to find the movie. The _ wildcard here represents any single character |
+|WHERE customer_last_name LIKE '__SON'; |Search for customers whose last name is five characters long and ends with 'SON'|
 
