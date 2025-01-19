@@ -153,12 +153,12 @@ WHERE rating IN ('G', 'PG', 'PG-13');
 |Operator|Meaning|
 |:------:|:-----:|
 |ALL|	Return true if all comparisons are true|
-AND	Return true if both expressions are true
-ANY	Return true if any one of the comparisons is true.
-BETWEEN	Return true if the operand is within a range
-EXISTS	Return true if a subquery contains any rows
-IN	Return true if the operand is equal to one of the value in a list
-LIKE	Return true if the operand matches a pattern
-NOT	Reverse the result of any other Boolean operator.
-OR 	Return true if either expression is true
-SOME	Return true if some of the expressions are true
+|AND|	Return true if both expressions are true
+|ANY|	Return true if any one of the comparisons is true.
+|BETWEEN|	Return true if the operand is within a range
+|EXISTS|	Return true if a subquery contains any rows
+|IN|	Return true if the operand is equal to one of the value in a list
+|LIKE|	Return true if the operand matches a pattern
+|NOT|	Reverse the result of any other Boolean operator.
+|OR| 	Return true if either expression is true
+|SOME|	Return true if some of the expressions are true
